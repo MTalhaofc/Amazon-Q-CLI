@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+}
+
+canvas {
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    display: none;
+}
+
+#score {
+    color: #0ff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    background: #0ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #00cccc;
+    transform: scale(1.05);
+}
+
+.player-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    width: 400px;
+}
+
+.player-form h2 {
+    color: #0ff;
+    margin-top: 0;
+}
+
+.player-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    background: #222;
+    border: 2px solid #0ff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.player-form input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.game-instructions {
+    margin: 20px 0;
+    color: #fff;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #0ff;
+}
+
+.game-instructions h3 {
+    color: #0ff;
+    margin-top: 0;
+}
+
+.game-instructions p {
+    margin: 5px 0;
+}
+
+.high-scores {
+    margin-top: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.high-scores h3 {
+    color: #0ff;
+    border-bottom: 1px solid #0ff;
+    padding-bottom: 5px;
+}
+
+.high-scores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.high-scores li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.high-scores li span.score {
+    color: #0ff;
+}
+
+#playerInfo {
+    color: #0ff;
+    font-size: 18px;
+}
+
+.game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+    display: none;
+    z-index: 10;
+}
+
+.game-over-screen h2 {
+    color: #f55;
+    margin-top: 0;
+    font-size: 32px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+#finalScore {
+    color: #0ff;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.game-over-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.game-over-buttons button {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#playAgainButton {
+    background: #0ff;
+}
+
+#playAgainButton:hover {
+    background: #00cccc;
+}
+
+#newPlayerButton {
+    background: #f55;
+}
+
+#newPlayerButton:hover {
+    background: #cc4444;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Browser Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="playerForm" class="player-form">
+            <h2>Enter Player Name</h2>
+            <input type="text" id="playerName" placeholder="Your Name" maxlength="15">
+            <button id="submitName">Play Game</button>
+            <div class="game-instructions">
+                <h3>How to Play</h3>
+                <p>↑ or W: Jump over obstacles</p>
+                <p>Space: Fire to destroy obstacles</p>
+                <p>Collect yellow power-ups for bonus points!</p>
+            </div>
+            <div id="highScoresList" class="high-scores">
+                <h3>High Scores</h3>
+                <ul id="scoresList"></ul>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <div id="playerInfo">Player: <span id="currentPlayer">Guest</span></div>
+            <div id="score">Score: 0</div>
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="gameOverScreen" class="game-over-screen">
+            <h2>Game Over</h2>
+            <div id="finalScore">Your Score: 0</div>
+            <div class="game-over-buttons">
+                <button id="playAgainButton">Play Again</button>
+                <button id="newPlayerButton">New Player</button>
+            </div>
+            <div class="high-scores">
+                <h3>High Scores</h3>
+                <ul id="gameOverScoresList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
